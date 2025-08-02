@@ -1,6 +1,6 @@
 import requests
 
-HUGGINGFACE_API_TOKEN = "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"
+HUGGINGFACE_API_TOKEN = "ENTER TOKEN HERE"
 API_URL = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.1"
 
 headers = {
@@ -34,3 +34,4 @@ Keep the tone motivating and clear.
         return result[0]["generated_text"].replace(prompt, "").strip()
     else:
         return f"⚠️ Error generating roadmap: {response.status_code} - {response.text}"
+
