@@ -1,6 +1,6 @@
 import requests
 
-HUGGINGFACE_API_TOKEN = "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"
+HUGGINGFACE_API_TOKEN = "ENTER YOUR TOKEN"
 API_URL = "https://api-inference.huggingface.co/models/HuggingFaceH4/zephyr-7b-beta"
 
 headers = {
@@ -47,3 +47,4 @@ Respond in a structured and friendly tone.
         return response.json()[0]["generated_text"].replace(prompt, "").strip()
     else:
         return f"⚠️ Error analyzing resume: {response.status_code} - {response.text}"
+
